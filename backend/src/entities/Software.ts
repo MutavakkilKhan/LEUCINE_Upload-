@@ -12,7 +12,7 @@ export class Software {
   @Column()
   description!: string;
 
-  @OneToMany(() => AccessRequest, (accessRequest) => accessRequest.software)
+  @OneToMany(() => AccessRequest, (accessRequest) => accessRequest.Software)
   accessRequests!: AccessRequest[];
 
   @Column({
